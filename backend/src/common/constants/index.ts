@@ -1,0 +1,32 @@
+export const XP_REWARDS = {
+  LESSON_COMPLETE: 10,
+  QUIZ_PASS: 20,
+  CODING_EXERCISE_PASS: 30,
+  FLASHCARD_REVIEW: 5,
+  FLASHCARD_CREATE: 5,
+  STREAK_BONUS: 5,
+  DAILY_CHALLENGE: 30,
+} as const;
+
+export const STREAK = {
+  RESET_HOURS: 24,
+  BONUS_THRESHOLD_1: 7,
+  BONUS_THRESHOLD_2: 14,
+  BONUS_THRESHOLD_3: 30,
+  DAILY_REVIEW_TARGET: 5,
+} as const;
+
+export const SM2 = {
+  INITIAL_EASE: 2.5,
+  MIN_EASE: 1.3,
+  EASE_DELTA: 0.1,
+  HARD_PENALTY: 0.15,
+  EASY_BONUS: 0.15,
+  INTERVALS: [1, 3, 7, 30],
+} as const;
+
+export const PAGINATION = {
+  DEFAULT_PAGE: 1,
+  DEFAULT_LIMIT: 20,
+  MAX_LIMIT: 100,
+} as const;

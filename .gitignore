@@ -64,3 +64,6 @@ pids
 .pnpm-debug.log*
 *.pem
 .vercel
+
+# Agent instructions
+AGENTS.md
