@@ -10,24 +10,12 @@ export class UsersService {
     private usersRepository: Repository<User>,
   ) {}
 
-  async findByEmail(email: string): Promise<User | null> {
-    return this.usersRepository.findOne({ where: { email } });
-  }
-
   async findById(id: string): Promise<User | null> {
     return this.usersRepository.findOne({ where: { id } });
   }
 
-  async findByGoogleId(googleId: string): Promise<User | null> {
-    return this.usersRepository.findOne({ where: { googleId } });
-  }
-
-  async findByFacebookId(facebookId: string): Promise<User | null> {
-    return this.usersRepository.findOne({ where: { facebookId } });
-  }
-
-  async findByGithubId(githubId: string): Promise<User | null> {
-    return this.usersRepository.findOne({ where: { githubId } });
+  async findByClerkId(clerkId: string): Promise<User | null> {
+    return this.usersRepository.findOne({ where: { clerkId } });
   }
 
   async create(userData: Partial<User>): Promise<User> {

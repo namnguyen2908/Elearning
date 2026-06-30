@@ -15,13 +15,7 @@ export class User {
   avatar: string;
 
   @Column({ nullable: true, unique: true })
-  googleId: string;
-
-  @Column({ nullable: true, unique: true })
-  facebookId: string;
-
-  @Column({ nullable: true, unique: true })
-  githubId: string;
+  clerkId: string;
 
   @Column({ default: 1 })
   level: number;
@@ -37,9 +31,6 @@ export class User {
 
   @Column({ default: 0 })
   totalStudyTime: number;
-
-  @Column({ nullable: true })
-  refreshToken: string;
 
   @CreateDateColumn()
   createdAt: Date;
